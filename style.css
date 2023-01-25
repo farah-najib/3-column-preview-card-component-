@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root
+{
+
+    --ff-regular: "Lexend Deca", sans-serif;
+    --ff-bold: "Big Shoulders Display", cursive;
+    --bright_orange: hsl(31, 77%, 52%);
+    --dark_cyan: hsl(184, 100%, 22%);
+    --very_dark_cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+
+}
+
+body {
+ 
+  justify-content: center;
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+  color: var(--transparent-white);
+  background-color: var(--light-gray);
+}
+
+footer {
+  text-align: center;
+}
+
+
+.container {
+  display: grid;
+  align-items:center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px auto;
+  max-width:950px;
+}
+
+.column {
+  height: 400px;
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  height: 40px;
+  width: 64px
+}
+
+h1 {
+  padding-top: 50px;
+  padding-bottom: 20px;  
+  font-family: var(--ff-bold);
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+p {
+font-family: 'Lexend Deca', sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+}
+.button1 {
+  cursor: pointer;
+  padding: 1em 2em;
+  border: 2px solid var(--light-gray);
+  border-radius: 2em;
+  color: var(--bright_orange);
+  background-color: var(--light-gray);
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+}
+.button2 {
+  cursor: pointer;
+  padding: 1em 2em;
+  border: 2px solid var(--light-gray);
+  border-radius: 2em;
+  color: var(--dark_cyan);
+  background-color: var(--light-gray);
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+}.button3 {
+  cursor: pointer;
+  padding: 1em 2em;
+  border: 2px solid var(--light-gray);
+  border-radius: 2em;
+  color: var(--very_dark_cyan);
+  background-color: var(--light-gray);
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+}
+.button1:hover,.button2:hover,.button3:hover {
+  color: var(--light-gray);
+  background-color: transparent;
+}
+
+.first-column {
+  background-color: #E28525 ;
+  border-radius: 12px 0px 0px 12px;
+}
+.first-column .button a {
+  color: #E28525 ;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.second-column {
+  background-color: #016972 ;
+}
+.second-column .button a {
+  color: #016972 ;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.third-column{
+  background-color: #00403F;
+  border-radius: 0px 12px 12px 0px;
+}
+.third-column .button a {
+  color: #00403F ;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: black }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+	body {
+		/* width: 100vw; */
+		min-height: 100vh;
+		justify-content: center;
+		align-items: center;
+		font-family: Poppins;
+		font-size: 15px;
+	}
+  .container {
+    grid-template-columns: repeat(1, 3fr);
+    margin-top: 0px;
+ }
+ .first-column {
+   border-radius: 12px 12px 0px 0px;
+ }
+ .third-column{
+   background-color: #00403F;
+   border-radius: 0px 0px 12px 12px;
+ }
+}
+
